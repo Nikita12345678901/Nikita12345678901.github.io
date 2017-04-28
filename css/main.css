@@ -1,0 +1,26 @@
+.hdr {
+	font-family: Verdana;
+	font-size: 3em;
+	font-weight: bold;
+	color:black;
+	letter-spacing: -0.11em;
+    text-shadow: -0.05em 0px 0.07em #000000;
+    width: 9em;
+
+}
+
+
+.red{
+	display: inline-block;
+	color: #F00000;
+}
+.orange{
+    display: inline-block;
+    color: goldenrod;
+}
+body{
+     background-image: url(http://grushevskogo5.com/upload/iblock/4c4/fd89b3c83ecda94a8e60d20672fd5991.jpg);
+     background-size: 100%;
+     background-position: center center;
+
+}
