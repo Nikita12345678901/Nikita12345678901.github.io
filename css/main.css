@@ -48,13 +48,6 @@ h2 {
     margin: 1px 50px 20px 50px;
     /* Значения отступа от блока */
 }
-.content {
-    margin: 10px 25% 20px 5px;
-    /* Значения отступа от правого блока */
-
-    padding: 5px;
-    /* Поля внутри блока */
-}
 .footer {
     background: #333;
     /* Цвет фона подвал (футера) */
@@ -83,17 +76,26 @@ a {
     display: table;
     padding: 7px;
     border: 1px solid #495058;
-    border-radius: 3%;
     background-color: white;
     padding: 5px;
-    width: 500px;
-    background-image: url(http://www.gamer.ru/system/attached_images/images/000/685/185/original/logo-burst-wide-2dcym.jpg);
+    width: 1503.5px;
+    height: 800;
+    background-image: url();
     background-size: 100%;
 }
 .top9,
 .top9 a:visited {
-    color: white;
+    color: black;
 }
 caption {
     color: black;
+    font-size:20px;
+}
+.t1{
+    padding-left: 510px;
+    font-size: 27px;
+
+}
+.t2{
+    font-family: "Comic Sans MS",Comic Sans, cursive;
 }
