@@ -1,7 +1,6 @@
 .classes {
     width: 50%;
     margin-top: 50px;
-    background-color: red;
 }
 
 .class-header img {
@@ -18,4 +17,21 @@
 .hero {
     color: white;
     display: inline-block;
+    width: 80px;
+}
+
+.hero h3 {
+    font-size: 15px;
+    text-align: center;
+}
+
+.class {
+    padding: 10px 15px 10px 15px;
+    border: 3px #212121 solid;
+    border-radius: 10px;
+    background-color: rgba(33, 33, 33, 0.7)
+}
+
+.heroes {
+    margin: auto;
 }
