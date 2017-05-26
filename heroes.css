@@ -1,0 +1,21 @@
+.classes {
+    width: 50%;
+    margin-top: 50px;
+    background-color: red;
+}
+
+.class-header img {
+    height: 30px;
+    margin-top: -10px;
+}
+
+.class-header * {
+    display: inline-block;
+    font-size: 30px;
+    color: white;
+}
+
+.hero {
+    color: white;
+    display: inline-block;
+}
