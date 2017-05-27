@@ -56,4 +56,5 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url(img/background-overwatch-top.jpg);
+    background-attachment: fixed;
 }
