@@ -54,7 +54,7 @@ table {
     width: 100%;
 }
 
-.hero-titel {
+.hero-title {
     text-align: center;
     font-size: 25px;
     line-height: 30px;
@@ -87,7 +87,7 @@ tr:last-child td {
 
 .sposobnost {
     display: inline-block;
-    margin: 13px;
+    margin: 8px;
 }
 
 .sposobnost img {

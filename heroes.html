@@ -1,7 +1,9 @@
 <head>
-    <link rel="stylesheet" href="/bootstrap.min.css" />
-    <link rel="stylesheet" href="/header.css" />
-    <link rel="stylesheet" href="/heroes.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="heroes.css" />
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/heroes.js"></script>
     <title>Герои</title>
 </head>
 
@@ -34,7 +36,7 @@
                             <h2>Штурм</h2><img src="img/OffenseIcon.png" />
                         </div>
                         <div class="heroes">
-                            <div class="hero">
+                            <div class="hero" id="default">
                                 <img src="img/71px-%D0%93%D1%8D%D0%BD%D0%B4%D0%B7%D0%B8-%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82.png" />
                                 <h3>Гэндзи</h3>
                             </div>
@@ -75,7 +77,8 @@
                                 <h3>Бастион</h3>
                             </div>
                             <div class="hero">
-                                <img src="img/71px-%D0%9A%D1%80%D1%8B%D1%81%D0%B0%D0%B2%D1%87%D0%B8%D0%BA-%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82.png" />
+                                <img src="img/71px-%D0%9A%D1%80%D1%8B%D1%81%D0%B0%D0%B2%D1%87%D0%B8%D0%BA-%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82.png"
+                                />
                                 <h3>Крысавчик</h3>
                             </div>
                             <div class="hero">
@@ -83,7 +86,8 @@
                                 <h3>Мэй</h3>
                             </div>
                             <div class="hero">
-                                <img src="img/71px-%D0%A0%D0%BE%D0%BA%D0%BE%D0%B2%D0%B0%D1%8F_%D0%B2%D0%B4%D0%BE%D0%B2%D0%B0-%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82.png" />
+                                <img src="img/71px-%D0%A0%D0%BE%D0%BA%D0%BE%D0%B2%D0%B0%D1%8F_%D0%B2%D0%B4%D0%BE%D0%B2%D0%B0-%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82.png"
+                                />
                                 <h3>Вдова</h3>
                             </div>
 
@@ -113,11 +117,13 @@
                                 <h3>Ориса</h3>
                             </div>
                             <div class="hero">
-                                <img src="img/71px-%D0%A0%D0%B0%D0%B9%D0%BD%D1%85%D0%B0%D1%80%D0%B4%D1%82-%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82.png" />
+                                <img src="img/71px-%D0%A0%D0%B0%D0%B9%D0%BD%D1%85%D0%B0%D1%80%D0%B4%D1%82-%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82.png"
+                                />
                                 <h3>Райнхард</h3>
                             </div>
                             <div class="hero">
-                                <img src="img/71px-%D0%A2%D1%83%D1%80%D0%B1%D0%BE%D1%81%D0%B2%D0%B8%D0%BD-%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82.png" />
+                                <img src="img/71px-%D0%A2%D1%83%D1%80%D0%B1%D0%BE%D1%81%D0%B2%D0%B8%D0%BD-%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82.png"
+                                />
                                 <h3>Турбосвин</h3>
                             </div>
                             <div class="hero">
@@ -146,7 +152,8 @@
                                 <h3>Ангел</h3>
                             </div>
                             <div class="hero">
-                                <img src="img/71px-%D0%94%D0%B7%D0%B5%D0%BD%D1%8A%D1%8F%D1%82%D1%82%D0%B0-%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82.png" />
+                                <img src="img/71px-%D0%94%D0%B7%D0%B5%D0%BD%D1%8A%D1%8F%D1%82%D1%82%D0%B0-%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82.png"
+                                />
                                 <h3>Дзеньятта</h3>
                             </div>
                             <div class="hero">
@@ -164,76 +171,74 @@
             <div class="col-md-4 hero-details">
                 <table>
                     <tr>
-                        <td colspan="2" class="hero-titel">Гэндзи</td>
+                        <td colspan="2" class="hero-title"></td>
                     </tr>
                     <tr class="fat-bottom">
-                        <td colspan="2"><img src="img/294px-%D0%93%D1%8D%D0%BD%D0%B4%D0%B7%D0%B8.png"></td>
+                        <td colspan="2"><img src="img/294px-%D0%93%D1%8D%D0%BD%D0%B4%D0%B7%D0%B8.png" id="hero-icon"></td>
                     </tr>
                     <tr>
                         <td>Роль</td>
-                        <td>Штурм</td>
+                        <td id="role"></td>
                     </tr>
                     <tr>
                         <td>Настоящее имя</td>
-                        <td>Гэндзи Шимада</td>
+                        <td id="realName"></td>
                     </tr>
                     <tr>
                         <td>Возраст</td>
-                        <td>35 лет</td>
+                        <td id="age"></td>
                     </tr>
                     <tr>
                         <td>Род занятий</td>
-                        <td>Искатель приключений</td>
+                        <td id="occupation"></td>
                     </tr>
                     <tr>
                         <td>Опкративная база</td>
-                        <td>Непал</td>
+                        <td id="base"></td>
                     </tr>
                     <tr>
                         <td>Принадлежность</td>
-                        <td>Клан Шимада</td>
-                    </tr>
-                    <tr>
-                        <td>Связи</td>
-                        <td>Хандзо Шимада</td>
+                        <td id="clan"></td>
                     </tr>
                     <tr class="fat-bottom">
                         <td>Дата выхода</td>
-                        <td>10 ноября 2015</td>
+                        <td id="release_date"></td>
                     </tr>
                     <tr>
                         <td colspan="2">Характеристики</td>
                     </tr>
                     <tr>
                         <td>Суммарное здоровье</td>
-                        <td>200</td>
+                        <td id="totalHealth"></td>
                     </tr>
                     <tr>
                         <td>Базовое здоровье</td>
-                        <td>200</td>
+                        <td id="baseHealth"></td>
                     </tr>
                     <tr>
                         <td>Броня</td>
-                        <td>0</td>
+                        <td id="armor"></td>
                     </tr>
                     <tr>
                         <td>Щиты</td>
-                        <td>0</td>
+                        <td id="shields"></td>
                     </tr>
                     <tr>
                         <td>Быстрый удар</td>
-                        <td>30</td>
+                        <td id="damage"></td>
                     </tr>
                     <tr class="fat-bottom">
                         <td>Скорость передвижения</td>
-                        <td>6</td>
+                        <td id="speed"></td>
                     </tr>
                     <tr>
                         <td colspan="2">
                             <div class="sposobnosty">
-                                <div class="sposobnost"><img src="img/gendzy/1.png"></div>
-                                <div class="sposobnost"><img src="img/gendzy/%D0%9C%D0%BE%D0%BB%D0%BD%D0%B8%D0%B5%D0%BD%D0%BE%D1%81%D0%BD%D1%8B%D0%B9_%D1%83%D0%B4%D0%B0%D1%80.png"></div>
-                                <div class="sposobnost"><img src="img/gendzy/%D0%9E%D1%82%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B0%D1%82%D0%B0%D0%BA.png"></div>
+                                <div class="sposobnost"><img src="img/gendzy/1.png" id="a-0"></div>
+                                <div class="sposobnost"><img src="img/gendzy/%D0%9C%D0%BE%D0%BB%D0%BD%D0%B8%D0%B5%D0%BD%D0%BE%D1%81%D0%BD%D1%8B%D0%B9_%D1%83%D0%B4%D0%B0%D1%80.png"
+                                        id="a-1"></div>
+                                <div class="sposobnost"><img src="img/gendzy/%D0%9E%D1%82%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B0%D1%82%D0%B0%D0%BA.png"
+                                        id="a-2"></div>
                             </div>
                         </td>
                     </tr>
