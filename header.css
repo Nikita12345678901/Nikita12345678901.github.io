@@ -18,7 +18,7 @@
     display: none;
 }
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:1200px) {
     .small-title {
         display: block;
     }
@@ -45,6 +45,8 @@
 
 a .button {
     color: white;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 a {
@@ -57,4 +59,25 @@ body {
     background-position: center center;
     background-image: url(img/background-overwatch-top.jpg);
     background-attachment: fixed;
+}
+
+.header a:link {
+    text-decoration: none;
+}
+
+.header a:visited {
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-decoration: none;
+}
+
+.header a:active {
+    text-decoration: none;
+}
+
+.selected {
+    border: 2px #fb8c00 solid;
+    border-radius: 10px;
 }
