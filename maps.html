@@ -3,8 +3,10 @@
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="maps.css" />
     <script src="scripts/jquery-3.2.1.min.js"></script>
-    <script src="scripts/"></script>
+    <script src="scripts/scroll.js"></script>
     <title>Карты</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -15,10 +17,10 @@
                 <div class="small-title">OW</div>
             </div>
             <div class="buttons">
-                <a href="#">
+                <a href="index.html">
                     <div class="button">Главная</div>
                 </a>
-                <a href="/heroes.html">
+                <a href="heroes.html">
                     <div class="button">Герои</div>
                 </a>
                 <a href="#">
@@ -36,24 +38,24 @@
             <p class="intro">Карты — это места, где происходят сражения между игроками в Overwatch. Карты делятся на разные виды, в зависимости от задач, которые необходимо на них выполнить. Далее мы познакомим вас со списком карт и режимами игры.</p>
             <div class="contents">
                 <ul>
-                    <a href="#">
+                    <a class="scroll" href="#" data-scroll="zahvat">
                         <li>Захват точек</li>
                     </a>
-                    <a href="#">
+                    <a class="scroll" href="#" data-scroll="soprov">
                         <li>Сопровождение</li>
                     </a>
-                    <a href="#">
+                    <a class="scroll" href="#" data-scroll="controle">
                         <li>Контроль объекта</li>
                     </a>
-                    <a href="#">
+                    <a class="scroll" href="#" data-scroll="gibrid">
                         <li>Гибридная карта</li>
                     </a>
-                    <a href="#">
+                    <a class="scroll" href="#" data-scroll="arena">
                         <li>Арена</li>
                     </a>
                 </ul>
             </div>
-            <div>
+            <div id="zahvat">
                 <h2>Захват точек</h2>
                 <p class="description">На карте данного типа атакующая команда должна захватить две контрольные точки, а обороняющаяся команда должна не допустить этого.</p>
 
@@ -70,7 +72,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div id="soprov">
                 <h2>Сопровождение</h2>
                 <p class="description">Основная цель на картах этого типа — доставить какой-то объект в нужную точку.</p>
 
@@ -87,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div id="controle">
                 <h2>Контроль объекта</h2>
                 <p class="description">На картах этого типа матч длится три раунда. В каждом раунде команды должны удерживать контроль над одной определенной точкой. Прогресс захвата точки отображается в процентах, команда, быстрее набравшая 100% выигрывает. Игра идет до двух побед.</p>
 
@@ -104,7 +106,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div id="gibrid">
                 <h2>Гибридная карта</h2>
                 <p class="description">На гибридной карте участники атакующей команды должны сначала захватить точку с объектом, а затем сопроводить этот объект в конечную контрольную точку.</p>
 
@@ -121,7 +123,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div id="arena">
                 <h2>Арена</h2>
                 <p class="description">Специальные небольшие карты для режимов Аркады 1х1 и 3х3.</p>
 
